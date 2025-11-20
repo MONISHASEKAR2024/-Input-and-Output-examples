@@ -1,0 +1,16 @@
+<p>This is Parent Component</p>
+
+<app-child2 (data)="DataFromChild($event)"></app-child2>
+
+<hr>
+
+
+<h2>This is Parent Component</h2>
+
+<p>Data received from child component</p>
+
+<p *ngIf="receivedDate; else noData">Parent Says : Hello {{ receivedDate }}</p>
+<ng-template #noData>
+  <p>No Data Found</p>
+ </ng-template>
+
