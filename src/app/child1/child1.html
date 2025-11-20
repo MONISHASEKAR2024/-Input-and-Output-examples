@@ -1,0 +1,7 @@
+<!-- Child component template -->
+<p>This is child Component</p>
+
+<p *ngIf="username; else noData">Child says : Hello {{ username }}</p>
+<ng-template #noData>
+  <p>No data found</p>
+</ng-template>
