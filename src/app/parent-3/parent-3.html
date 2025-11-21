@@ -1,0 +1,16 @@
+<app-child-3 (sendmessage)="Data($event)"> </app-child-3>
+
+<hr>
+
+<h2 *ngIf="receivedData">This is parent component name</h2>
+<p *ngIf="receivedData">Received Data: {{ receivedData }}</p>
+
+
+
+<!-- Before (deprecated) -->
+<!--<button *ngIf="isLoggedIn" routerLink="/profile">Go to Profile</button> -->
+
+<!-- After (modern) -->
+<!--@if (isLoggedIn) {
+  <button routerLink="/profile">Go to Profile</button>
+}-->

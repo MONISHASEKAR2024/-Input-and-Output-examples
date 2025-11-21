@@ -4,4 +4,8 @@
 <p *ngIf="username; else noData">Child says : Hello {{ username }}</p>
 <ng-template #noData>
   <p>No data found</p>
-</ng-template>
+</ng-template> 
+<!-- we can simply this (or)
+//or-->
+
+<p *ngIf="username">Child says : Hello {{username}}</p>
