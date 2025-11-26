@@ -6,10 +6,12 @@ import { Child2 } from "./child2/child2";
 import { Parent2 } from './parent2/parent2';
 import { Parent3 } from "./parent-3/parent-3";
 import { Child3 } from "./child-3/child-3";
+import { Parent4 } from "./parent-4/parent-4";
+import { Parent5 } from "./parent-5/parent-5";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Parent1, FormsModule, Child2, Parent2, Parent3, Child3],
+  imports: [RouterOutlet, Parent1, FormsModule, Child2, Parent2, Parent3, Child3, Parent4, Parent5],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

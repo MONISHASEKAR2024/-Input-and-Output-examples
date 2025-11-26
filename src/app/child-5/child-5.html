@@ -1,0 +1,16 @@
+<h2>Child Component</h2>
+
+<p>Name: {{item.name}} </p>
+<p>Id: {{item.id}} </p>
+<p>Price: {{item.price}} </p>
+
+<input type="text" placeholder="Change Name" #name>
+<button (click)="UpdateName(name.value)"> Update Name</button> 
+<br><br><br>
+
+<button  (click)="UpdateId()">Increase Id</button>
+
+<br><br><br>
+
+<input type="text" placeholder="Change Price" #price>
+<button (click)="UpdatePrice(+price.value)">Update price </button>

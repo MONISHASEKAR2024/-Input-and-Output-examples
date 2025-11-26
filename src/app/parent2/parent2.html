@@ -1,4 +1,4 @@
-<p>This is Parent Component</p>
+<!-- <p>This is Parent Component</p> -->
 
 <app-child2 (data)="DataFromChild($event)"></app-child2>
 
@@ -9,7 +9,7 @@
 
 <p>Data received from child component</p>
 
-<p *ngIf="receivedDate; else noData">Parent Says : Hello {{ receivedDate }}</p>
+<p *ngIf="receivedDate; else noData">Child Says : Hello {{ receivedDate }}</p>
 <ng-template #noData>
   <p>No Data Found</p>
  </ng-template>

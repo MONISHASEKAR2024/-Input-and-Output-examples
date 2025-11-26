@@ -5,7 +5,9 @@
 <ng-template #noData>
   <p>No data found</p>
 </ng-template> 
+
 <!-- we can simply this (or)
 //or-->
 
 <p *ngIf="username">Child says : Hello {{username}}</p>
+<p *ngIf="!username">No Data Found </p>
