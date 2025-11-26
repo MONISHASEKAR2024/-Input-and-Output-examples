@@ -23,6 +23,11 @@ export class Child5 {
   this.pro.emit(things);
   }
 
+  UpdatesId(){
+    const things = { ...this.item, id: this.item.id - 1};
+    this.pro.emit(things);
+  }
+  
   UpdatePrice(newPrice : number){
     const things = { ...this.item, price: newPrice };
     this.pro.emit(things);
