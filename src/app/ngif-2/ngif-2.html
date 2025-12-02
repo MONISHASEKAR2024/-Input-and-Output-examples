@@ -1,0 +1,18 @@
+<!-- <h2>ngIf Examples</h2>
+
+<p *ngIf="age >= 18; else minor">
+    You can vote this election
+</p>
+
+<ng-template #minor>
+    Your are not eligible to vote this time
+</ng-template> -->
+
+<p *ngIf="age >= 18 && country === 'india' else minor">
+    You are eligible to vote.
+  </p>
+  
+  <ng-template #minor>
+    <p>You must be 18+ to vote.</p>
+  </ng-template>
+  

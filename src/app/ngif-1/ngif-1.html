@@ -1,0 +1,21 @@
+
+ @if(isActive){
+    <p>User is active</p>
+    }
+
+ @else {
+    <p>User is inactive</p>
+    } 
+
+
+    (or)
+
+ 
+    <div *ngIf="isActive; else inactive">
+        <p>User is active</p>
+      </div>
+      
+      <ng-template #inactive>
+        <p>User is inactive</p>
+      </ng-template> 
+      

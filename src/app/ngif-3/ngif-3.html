@@ -1,0 +1,6 @@
+<p *ngIf="isLoggedin">Welcome User</p>
+
+<li  *ngFor="let product of products">Products: 
+    <span *ngIf="product.instock"> {{product.name}} </span>
+    <span *ngIf="!product.instock" style="color: red;">Out of Stock</span>
+</li>

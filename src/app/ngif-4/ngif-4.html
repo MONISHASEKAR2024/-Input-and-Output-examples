@@ -1,0 +1,7 @@
+<div *ngIf="cartitems.length > 0; else emptycart">
+    <p>Your cart is having items</p>
+</div>
+
+<ng-template #emptycart>
+    <p> There is no items</p>
+</ng-template>
