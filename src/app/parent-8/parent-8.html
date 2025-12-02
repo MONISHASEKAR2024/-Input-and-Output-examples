@@ -1,0 +1,7 @@
+<h2>This is parent component</h2>
+
+<input type="text" [(ngModel)]="username" placeholder="Enter name" />
+<button (click)="OnSend()">Send</button>
+<p *ngIf="showerrormsg" style="color: red;">{{ showerrormsg }}</p>
+
+<app-child-8 [name]="username" (updatedName)="OnErrorMsg($event)" ></app-child-8>

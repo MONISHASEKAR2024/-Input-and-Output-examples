@@ -1,0 +1,5 @@
+<p>This is parent component</p>
+
+<app-child-7 [amount] = "TicketAmount" (invalidAmount) ="ShowErrorMsg($event)"></app-child-7>
+
+<p *ngIf="errorMsg" style="color: red;"> {{errorMsg}} </p>

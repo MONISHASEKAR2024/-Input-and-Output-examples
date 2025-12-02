@@ -1,0 +1,6 @@
+<h2>This is parent Component</h2>
+
+<app-child-9 [product]="product" (Prod)="receiveError($event)"></app-child-9>
+
+<p *ngIf="ErrorList.length > 0" style="color: red;">Errors:</p>
+<p *ngFor="let e of ErrorList"> {{e}}</p>
