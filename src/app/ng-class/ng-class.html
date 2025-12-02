@@ -1,0 +1,7 @@
+<!-- <p [ngClass]="{'active':isActive, 'disabled': !isActive}"> User Status</p> -->
+ <p [ngClass]="{'highlight': isActive}">
+    This div will be highlighted when isActive is true.
+ </p>
+
+<button (click)="toggleActive()">Toggle Highlight</button>
+
