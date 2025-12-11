@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { AppHighlight } from "../app-highlight";
-import { AppSelect } from '../app-select';
-import { AppDisable } from '../app-disable';
+import { AppHighlight } from "../Directive/app-highlight";
+import { AppSelect } from '../Directive/app-select';
+import { AppDisable } from '../Directive/app-disable';
 
 @Component({
   selector: 'app-custom-attribute-directive-1',
@@ -15,7 +15,10 @@ export class CustomAttributeDirective1 {
   message: string = '';
 
   OnClick(value:any){
-    this.data 
+    // Store the click event or value to avoid unused variable errors
+    this.data = value;
+    // Optionally update message or handle logic here
+    // this.message = 'Clicked!';
 
   }
 }
